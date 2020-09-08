@@ -4,8 +4,9 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import * as serviceWorker from './serviceWorker';
 import App from './components/App';
+import reducers from './reducers';
 
-const store = createStore(() => [], {}, applyMiddleware());
+const store = createStore(reducers, {}, applyMiddleware());
 
 ReactDOM.render(
   <Provider store={store}>
