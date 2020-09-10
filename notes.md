@@ -33,3 +33,9 @@ app.listen(PORT);
 // create .gitignore at project root
 node_modules
 ```
+
+## Subdocument Collection
+
+- relationship between models in mongoose
+- subdocument is always associated with one parent document
+- helps with physical 4mb limitation of mongodb documents
