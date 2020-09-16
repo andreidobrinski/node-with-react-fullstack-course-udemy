@@ -9,6 +9,25 @@ class SurveyForm extends Component {
         <Field
           type="text"
           name="title"
+          label="Survey Title"
+          component={SurveyField}
+        />
+        <Field
+          type="text"
+          name="subject"
+          label="Subject Line"
+          component={SurveyField}
+        />
+        <Field
+          type="text"
+          name="body"
+          label="Email Body"
+          component={SurveyField}
+        />
+        <Field
+          type="text"
+          name="emails"
+          label="Recipient List"
           component={SurveyField}
         />
       </div>
